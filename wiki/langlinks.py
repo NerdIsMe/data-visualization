@@ -5,7 +5,7 @@ url = "https://zh.wikipedia.org/w/api.php"
 
 PARAMS = {
     "action": "query",
-    "titles": "阿富汗",
+    "titles": "MediaWiki",
     "prop": "langlinks",
     "format": "json",
     "lllang": "en",

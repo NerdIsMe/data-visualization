@@ -2,12 +2,12 @@ import json, os, requests, time
 import pandas as pd 
 from fake_useragent import UserAgent
 
-def title_transform(title, from_lang, to_lang='en'):
+def title_transform(title, from_lang, to_lang='en', time_sleep=2):
 	# if from_lang == to_lang, 直接 return
 	if from_lang == to_lang:
 		return title
 
-	# time.sleep(time_sleep)
+	time.sleep(time_sleep)
 
 	url = "https://%s.wikipedia.org/w/api.php" %from_lang
 	PARAMS = {
